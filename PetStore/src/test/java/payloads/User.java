@@ -2,14 +2,14 @@ package payloads;
 
 public class User {
 	
-	public int id;
-	public String username;
-	public String firstname;
-	public String lastname;
-	public String email;
-	public String password;
-	public String phone;
-	public int userstatus;
+	private int id;
+	private String username;
+	private String firstname;
+	private String lastname;
+	private String email;
+	private String password;
+	private String phone;
+	private int userstatus;
 	
 	
 	public int getId() {

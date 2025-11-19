@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="PetStoreSuite">
+<suite parallel="classes" name="Suite">
 
 <listeners>
-	<listener class-name= "utilities.ExtentReportUtilities"></listener>
+<listener class-name="utilities.ExtentReportUtilities.java"></listener>
+
 </listeners>
-  <test thread-count="5" name="Test">
+
+  <test thread-count="5" parallel="classes" name="Test">
     <classes>
       <class name="testcases.UserTests"/>
       <class name="testcases.DataDrivenTest"/>
     </classes>
   </test> <!-- Test -->
-</suite> <!-- PetStoreSuite -->
+</suite> <!-- Suite -->
