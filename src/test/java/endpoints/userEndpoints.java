@@ -2,8 +2,8 @@ package endpoints;
 
 import static io.restassured.RestAssured.given;
 
+import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
-import org.apache.log4j.PropertyConfigurator;
 
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
@@ -11,10 +11,10 @@ import payloads.User;
 
 public class userEndpoints {
 	
-	Logger logger = Logger.getLogger(userEndpoints.class);
-	PropertyConfigurator.
+	Logger logger = LogManager.getLogger(userEndpoints.class)
 
 	public static Response CreateUser(User payload) {
+	
 
 		Response response = given()
 				.contentType(ContentType.JSON)
