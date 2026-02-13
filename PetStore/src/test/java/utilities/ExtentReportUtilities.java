@@ -19,7 +19,7 @@ public class ExtentReportUtilities implements ITestListener{
 	public ExtentReports extent;
 	public ExtentTest test;
 
-String repName;
+     public String repName;
 	
 	@Override
 	public void onStart(ITestContext context) {
