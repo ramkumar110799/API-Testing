@@ -1,17 +1,13 @@
 package endpoints;
 
 import static io.restassured.RestAssured.given;
-
-import org.apache.log4j.LogManager;
-import org.apache.log4j.Logger;
-
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import payloads.User;
 
 public class userEndpoints {
 	
-	Logger logger = LogManager.getLogger(userEndpoints.class)
+	//Logger logger = LogManager.getLogger(userEndpoints.class)
 
 	public static Response CreateUser(User payload) {
 	
